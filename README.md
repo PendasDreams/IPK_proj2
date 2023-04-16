@@ -33,6 +33,13 @@ Pro zpracování argumentů se používá knihovna getopt. Program přijímá kr
 Pokud není při zadání přepínače -i uveden žádný argument, program vypíše na standardní výstup síťový výstup, který je k dispozici. Protože knihovna getopt neumožňuje zpracování tohoto typu, v projektu se tento problém řeší jinak
 
 
+### Funkce třídy sniffer
+
+
+
+### Funkce třídy pakcet
+
+
 
 
 
