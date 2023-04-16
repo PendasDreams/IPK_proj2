@@ -74,8 +74,18 @@ Tato funkce má za úkol uvolnit alokované zdroje při vytváření paketu.
 
 V adresáři se nachází makefile, pomocí příkazu make se vytvoří spustitelný soubor v kořenovém adresáři. Příkaz make clean vymaže dočasné soubory a vytvořené spustitelné soubory.
  
-#### Přiklad spuštění
+#### Přiklad a spuštění
 `$ ./ipk-sniffer -i eth0 --tcp` 
+
+
+# Výstup programu
+Program zpracovává zachycené pakety a vypisuje je na standardní výstup. Výpis obsahuje hlavičku, ve které jsou uložena metadata paketu. Zbytek výpisu tvoří celá datová část paketu v formátovaném tvaru.
+
+Chybové stavy jsou identifikovány a řešeny pomocí příslušných chybových hlášek. Pokud se vyskytne jakákoli chyba, bude zobrazeno chybové hlášení na standardní chybový výstup "stderr" a program se ukončí s návratovou hodnotou 1. Navíc je v programu zachycen signál "Keyboard interrupt" a po jeho přijetí bude program korektně ukončen voláním funkce "exit sniffer()".
+
+
+
+
 
 
 
