@@ -21,6 +21,6 @@ Modul sniffer obsahuje implementaci třídy se stejným názvem. Tato třída ob
 
 Třída packet v modulu packet slouží k zpracování a výpisu zachycených paketů. Instance této třídy obsahuje data o zachyceném paketu, jako je samotný paket, délka dat a čas zachycení paketu. V metodě parse() se získávají metadata paketu, například adresy příjemce, odesílatele, porty atd. Poté se podle určeného druhu paketu volají funkce, které "rozbalí" paket po jednotlivých vrstvách.
 
-#Implemetnace
+# Implemetnace
 
 
