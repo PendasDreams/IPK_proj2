@@ -55,9 +55,9 @@ Tato funkce má za úkol uvolnit alokované zdroje při vytváření paketu.
 
 Funkce **print_packet()** má za úkol vytisknout celý paket a používá specifické funkce pro tisk jednotlivých částí paketu. Tisk paketu je závislý na jeho správném zpracování.
 
-Funkce **print_header()** má za úkol vypsat hlavičku paketu, která obsahuje informace o čase přijetí paketu, jeho zdroji a cílové adrese, kam byl paket odeslán, a délce paketu v bytech.
-
 Funkce **print_data()** má za úkol vypsat formátovaná data obsažená v paketu. Data jsou zapsána po bytech a jsou vypsána jako hexadecimální hodnoty. Pokud je to možné, jsou také vypsána v ASCII formátu. Pokud není znak v ASCII formátu dostupný, je nahrazen tečkou.
+
+Funkce **print_header()** má za úkol vypsat hlavičku paketu, která obsahuje informace o čase přijetí paketu, jeho zdroji a cílové adrese, kam byl paket odeslán, a délce paketu v bytech.
 
 Funkce **parse()** slouží k obsluze zpracování paketu. V této funkci se identifikuje typ paketu z ethernetové hlavičky (IPv4, IPv6 nebo ARP). Podle tohoto typu se rozhodne, jaká funkce bude volána na zpracování další vrstvy paketu.
 
