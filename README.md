@@ -76,6 +76,7 @@ V adresáři se nachází makefile, pomocí příkazu make se vytvoří spustite
  
 #### Přiklad a spuštění
 `$ ./ipk-sniffer -i eth0 --tcp` 
+`$ ./ipk-sniffer -i eth0 --icmp` 
 
 
 # Výstup programu
@@ -85,7 +86,8 @@ Chybové stavy jsou identifikovány a řešeny pomocí příslušných chybovýc
 
 
 
-
+# Testování
+K ověření byly využity dva počítače, jeden s operačním systémem Ubuntu 20.04.2.0 LTS a druhý referenční stroj PDS-VM. Testování probíhalo prostřednictvím zachytávání paketů a srovnávání výstupů, přičemž byl použit program Wireshark1 k ověření všech podporovaných typů paketů. Pro generování paketů byly použity nástroje ping, nping2 a hashcat.
 
 
 
