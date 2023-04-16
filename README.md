@@ -96,16 +96,16 @@ K ověření byly využity dva počítače, jeden s operačním systémem Ubuntu
 <img title="a title" alt="Alt text" src="/img/UDP.png">
 
 ### Zachycnení TCP packetu pik-sniffer
-<img title="a title" alt="Alt text" src="/img/TCP.png">
-
-### Zachycnení TCP packetu Wireshark
 <img title="a title" alt="Alt text" src="/img/TCP_MY.png">
 
+### Zachycnení TCP packetu Wireshark
+<img title="a title" alt="Alt text" src="/img/TCP.png">
+
 ### Zachycnení ICMP packetu pik-sniffer
-<img title="a title" alt="Alt text" src="/img/ICMP.png">
+<img title="a title" alt="Alt text" src="/img/ICMP_MY.png">
 
 ### Zachycnení ICMP packetu Wireshark
-<img title="a title" alt="Alt text" src="/img/ICMP_MY.png">
+<img title="a title" alt="Alt text" src="/img/ICMP.png">
 
 ### Zachycnení IGMP packetu pik-sniffer
 <img title="a title" alt="Alt text" src="/img/IGMP.png">
