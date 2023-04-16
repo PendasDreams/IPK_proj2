@@ -28,3 +28,12 @@ Třída packet v modulu packet slouží k zpracování a výpisu zachycených pa
 Pro zpracování argumentů se používá knihovna getopt. Program přijímá krátké i dlouhé možnosti přepínačů:
 
 `./ipk-sniffer [-i interface | --interface interface] {-p port [--tcp|-t] [--udp|-u]} [--arp] [--icmp4] [--icmp6] [--igmp] [--mld] {-n num}s`
+
+
+Pokud není při zadání přepínače -i uveden žádný argument, program vypíše na standardní výstup síťový výstup, který je k dispozici. Protože knihovna getopt neumožňuje zpracování tohoto typu, v projektu se tento problém řeší jinak
+
+
+
+
+
+
