@@ -114,10 +114,10 @@ K ověření byly využity dva počítače, jeden s operačním systémem Ubuntu
 <img title="a title" alt="Alt text" src="/img/IGMP_MY.png">
 
 ### Zachycnení ARP packetu pik-sniffer
-<img title="a title" alt="Alt text" src="/img/ARP.png">
+<img title="a title" alt="Alt text" src="/img/ARP_MY.png">
 
 ### Zachycnení ARP packetu Wireshark
-<img title="a title" alt="Alt text" src="/img/ARP_MY.png">
+<img title="a title" alt="Alt text" src="/img/ARP.png">
 
 
 
