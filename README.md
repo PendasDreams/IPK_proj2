@@ -33,7 +33,7 @@ Pro zpracování argumentů se používá knihovna getopt. Program přijímá kr
 Pokud není při zadání přepínače -i uveden žádný argument, program vypíše na standardní výstup síťový výstup, který je k dispozici. Protože knihovna getopt neumožňuje zpracování tohoto typu, v projektu se tento problém řeší jinak
 
 
-## Funkce třídy sniffer
+# Funkce třídy sniffer
 Funkce **init()** je určena k přípravě spuštění zachytávání paketů v síti. Pro spuštění této funkce jsou potřebné konfigurační údaje, jako je zařízení, na kterém se bude zachytávat, filtr pro zpracování paketů, čas ukončení programu při chybějící odpovědi od síťového zařízení, režim promiskuitního použití a počet paketů, které se mají zachytit a vypsat na obrazovku. Následně se pomocí funkce **pcap_lookupnet()** zjistí IPv4 adresa a maska zařízení a pomocí funkce **pcap_open_live()** se získá popisovač zachytávání paketů. Textový filtr se přeloží na filtrující program pomocí funkce **pcap_compile()** a nastaví se pomocí **pcap_setfilter()**. Pomocí funkce **pcap_datalink()** se zjistí typ datalinku zařízení. Při jakékoliv chybě se vypíše chybové hlášení a program skončí s chybovou návratovou hodnotou 1.
 
 Funkce **print_interfaces()** slouží k výpisu všech dostupných síťových zařízení. Při chybě se vypíše chybové hlášení a program skončí s návratovou hodnotou 1.
@@ -45,7 +45,7 @@ Funkce **handle_packet()** vytvoří a inicializuje nový objekt s daty přijat�
 Funkce **exit_sniffer()** slouží k ukončení běhu snifferu, pokud stále běží funkce **pcap_loop()**. Tuto funkci lze zastavit pomocí funkce **pcap_breakloop()** a uvolní se paměť popisovače.
 
 
-## Funkce třídy pakcet
+# Funkce třídy pakcet
 
 ### Konstruktor
 Konstruktor alokuje paměť pro paket a ukládá do něj časovou stopu a délku přijatého paketu. Též ukládá datovou část paketu, která bude později použita k získání metadat o přijatém paketu.
