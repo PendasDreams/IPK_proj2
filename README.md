@@ -8,3 +8,5 @@ Cílem projektu je vytvořit program, který umožňuje zachytávat a filtrovat 
 
 
 # Teorie
+
+Sniffing paketů je technika, která umožňuje získat data, která cestují v síti. Tyto techniky jsou nejčastěji používány pro správu sítě a kontrolu sítového provozu. Pakety obsahují data, která jsou rozdělena do různých vrstev, kde každá vrstva má svou vlastní hlavičku a tělo. Tělo paketu také obsahuje informace z nižší vrstvy, včetně další hlavičky a těla. Postupným zpracováním paketu po jednotlivých vrstvách lze nakonec získat požadovaná data.
