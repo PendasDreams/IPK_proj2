@@ -91,6 +91,7 @@ K ověření byly využity dva počítače, jeden s operačním systémem Ubuntu
 
 ### Zachycnení UDP packetu pik-sniffer
 <img title="a title" alt="Alt text" src="/img/UDP.png">
+
 ### Zachycnení UDP packetu Wireshark
 <img title="a title" alt="Alt text" src="/img/UDP_MY.png">
 ### Zachycnení TCP packetu pik-sniffer
