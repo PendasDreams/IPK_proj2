@@ -89,16 +89,25 @@ Chybové stavy jsou identifikovány a řešeny pomocí příslušných chybovýc
 # Testování
 K ověření byly využity dva počítače, jeden s operačním systémem Ubuntu 20.04.2.0 LTS a druhý referenční stroj PDS-VM. Testování probíhalo prostřednictvím zachytávání paketů a srovnávání výstupů, přičemž byl použit program Wireshark1 k ověření všech podporovaných typů paketů. Pro generování paketů byly použity nástroje ping, nping2 a hashcat.
 
-
+### Zachycnení UDP packetu pik-sniffer
 <img title="a title" alt="Alt text" src="/img/UDP.png">
+### Zachycnení UDP packetu Wireshark
 <img title="a title" alt="Alt text" src="/img/UDP_MY.png">
+### Zachycnení TCP packetu pik-sniffer
 <img title="a title" alt="Alt text" src="/img/TCP.png">
+### Zachycnení TCP packetu Wireshark
 <img title="a title" alt="Alt text" src="/img/TCP_MY.png">
+### Zachycnení ICMP packetu pik-sniffer
 <img title="a title" alt="Alt text" src="/img/ICMP.png">
+### Zachycnení ICMP packetu Wireshark
 <img title="a title" alt="Alt text" src="/img/ICMP_MY.png">
+### Zachycnení IGMP packetu pik-sniffer
 <img title="a title" alt="Alt text" src="/img/IGMP.png">
+### Zachycnení IGMP packetu Wireshark
 <img title="a title" alt="Alt text" src="/img/IGMP_MY.png">
+### Zachycnení ARP packetu pik-sniffer
 <img title="a title" alt="Alt text" src="/img/ARP.png">
+### Zachycnení ARP packetu Wireshark
 <img title="a title" alt="Alt text" src="/img/ARP_MY.png">
 
 
