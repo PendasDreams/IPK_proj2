@@ -47,10 +47,10 @@ Funkce **exit_sniffer()** slouží k ukončení běhu snifferu, pokud stále bě
 
 ### Funkce třídy pakcet
 
-## Konstruktor
+### Konstruktor
 Konstruktor alokuje paměť pro paket a ukládá do něj časovou stopu a délku přijatého paketu. Též ukládá datovou část paketu, která bude později použita k získání metadat o přijatém paketu.
 
-## Destruktor
+### Destruktor
 Tato funkce má za úkol uvolnit alokované zdroje při vytváření paketu.
 
 Funkce **print_packet()** má za úkol vytisknout celý paket a používá specifické funkce pro tisk jednotlivých částí paketu. Tisk paketu je závislý na jeho správném zpracování.
