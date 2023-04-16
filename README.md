@@ -34,7 +34,15 @@ Pokud není při zadání přepínače -i uveden žádný argument, program vyp�
 
 
 ### Funkce třídy sniffer
+Funkce init() je určena k přípravě spuštění zachytávání paketů v síti. Pro spuštění této funkce jsou potřebné konfigurační údaje, jako je zařízení, na kterém se bude zachytávat, filtr pro zpracování paketů, čas ukončení programu při chybějící odpovědi od síťového zařízení, režim promiskuitního použití a počet paketů, které se mají zachytit a vypsat na obrazovku. Následně se pomocí funkce pcap_lookupnet() zjistí IPv4 adresa a maska zařízení a pomocí funkce pcap_open_live() se získá popisovač zachytávání paketů. Textový filtr se přeloží na filtrující program pomocí funkce pcap_compile() a nastaví se pomocí pcap_setfilter(). Pomocí funkce pcap_datalink() se zjistí typ datalinku zařízení. Při jakékoliv chybě se vypíše chybové hlášení a program skončí s chybovou návratovou hodnotou 1.
 
+Funkce print_interfaces() slouží k výpisu všech dostupných síťových zařízení. Při chybě se vypíše chybové hlášení a program skončí s návratovou hodnotou 1.
+
+Funkce capture_packets() je určena pro zachytávání paketů pomocí funkce pcap_loop() a jejich posílání do funkce handle_packet(), která pakety zpracovává.
+
+Funkce handle_packet() vytvoří a inicializuje nový objekt s daty přijatými funkcí pcap_loop(). Následně se vytvořený paket zpracuje funkcí parse(). Pokud je zpracování úspěšné, paket se vypíše pomocí funkce print_packet().
+
+Funkce exit_sniffer() slouží k ukončení běhu snifferu, pokud stále běží funkce pcap_loop(). Tuto funkci lze zastavit pomocí funkce pcap_breakloop() a uvolní se paměť popisovače.
 
 
 ### Funkce třídy pakcet
