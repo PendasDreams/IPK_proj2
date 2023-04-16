@@ -47,8 +47,27 @@ Funkce **exit_sniffer()** slouží k ukončení běhu snifferu, pokud stále bě
 
 ### Funkce třídy pakcet
 
+## Konstruktor
+Konstruktor alokuje paměť pro paket a ukládá do něj časovou stopu a délku přijatého paketu. Též ukládá datovou část paketu, která bude později použita k získání metadat o přijatém paketu.
 
+## Destruktor
+Tato funkce má za úkol uvolnit alokované zdroje při vytváření paketu.
 
+Funkce **print_packet()** má za úkol vytisknout celý paket a používá specifické funkce pro tisk jednotlivých částí paketu. Tisk paketu je závislý na jeho správném zpracování.
+
+Funkce **print_header()** má za úkol vypsat hlavičku paketu, která obsahuje informace o čase přijetí paketu, jeho zdroji a cílové adrese, kam byl paket odeslán, a délce paketu v bytech.
+
+Funkce **print_data()** má za úkol vypsat formátovaná data obsažená v paketu. Data jsou zapsána po bytech a jsou vypsána jako hexadecimální hodnoty. Pokud je to možné, jsou také vypsána v ASCII formátu. Pokud není znak v ASCII formátu dostupný, je nahrazen tečkou.
+
+Funkce **parse()** slouží k obsluze zpracování paketu. V této funkci se identifikuje typ paketu z ethernetové hlavičky (IPv4, IPv6 nebo ARP). Podle tohoto typu se rozhodne, jaká funkce bude volána na zpracování další vrstvy paketu.
+
+Funkce **handle_ip_packet()** slouží k zpracování paketů s typem IPv4. Z hlavičky tohoto typu se získává informace o použitém protokolu (TCP, UDP, ICMP, IGMP). Poté, co jsou metadata zpracována, jsou zapsána do hlavičky.
+
+Funkce handle **ip6_packet()** má za úkol zpracovávat pakety s typem IPv6. Pomocí IPv6 hlavičky se identifikuje, o jaký protokol se jedná - zda TCP, UDP nebo ICMP. Po úspěšném zpracování metadat se zaznamenávají do hlavičky.
+
+Funkce **handle_arp_packet()** má za úkol zpracovávat pakety s typem ARP. Z této hlavičky se získává informace o zdrojové a cílové adrese a ty jsou poté uloženy do hlavičky.
+
+Funkce **get_packet_time()** má za úkol upravit formát časového razítka přijatí paketu podle standardu RFC3339.
 
 
 
