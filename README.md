@@ -120,4 +120,13 @@ K ověření byly využity dva počítače, jeden s operačním systémem Ubuntu
 <img title="a title" alt="Alt text" src="/img/ARP.png">
 
 
+# Zdroje
+Klyne, e. a. Date and Time on the Internet: Timestamps [online]. Last modified: July 2002 [accessed 9.4.2021]. Available at: https://www.ietf.org/rfc/rfc3339.txt.
+The Tcpdump Group, Man page of PCAP [online]. Last modified: 9.9.2020 [accessed 7.4.2021]. Available at: https://www.tcpdump.org/manpages/pcap.3pcap.html.
+Parsing program options using getopt [online]. [accessed 8.4.2020]. Available at: https://www.gnu.org/software/libc/manual/html_node/Getopt.html.
+Ansari, S., Rajeev, S., Chandrashekar, H. Packet sniffing: a brief introduction. IEEE Potentials, 2003, vol. 21, no. 5: pp. 17–19. doi:10.1109/MP.2002.1166620.
+Vandenberg, B. getopt does not parse optional arguments to parameters [online]. Last modified: 21.4.2020 [accessed 8.4.2021]. Available at: https://stackoverflow.com/questions/1052746/getopt-does-not-parse-optional-arguments-to-parameters.
+Chapman, D. B., Zwicky, E. D. Building Internet Firewalls. [online]. O’Reilly Associates, 1995. 517 p. ISBN 1-56592-124-0. Available at: https://www.cs.ait.ac.th/∼on/O/oreilly/tcpip/firewall/index.htm.
+
+
 
