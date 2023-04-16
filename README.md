@@ -50,8 +50,6 @@ Funkce **exit_sniffer()** slouží k ukončení běhu snifferu, pokud stále bě
 ### Konstruktor
 Konstruktor alokuje paměť pro paket a ukládá do něj časovou stopu a délku přijatého paketu. Též ukládá datovou část paketu, která bude později použita k získání metadat o přijatém paketu.
 
-### Destruktor
-Tato funkce má za úkol uvolnit alokované zdroje při vytváření paketu.
 
 Funkce **print_packet()** má za úkol vytisknout celý paket a používá specifické funkce pro tisk jednotlivých částí paketu. Tisk paketu je závislý na jeho správném zpracování.
 
@@ -68,6 +66,9 @@ Funkce handle **ip6_packet()** má za úkol zpracovávat pakety s typem IPv6. Po
 Funkce **handle_arp_packet()** má za úkol zpracovávat pakety s typem ARP. Z této hlavičky se získává informace o zdrojové a cílové adrese a ty jsou poté uloženy do hlavičky.
 
 Funkce **get_packet_time()** má za úkol upravit formát časového razítka přijatí paketu podle standardu RFC3339.
+
+### Destruktor
+Tato funkce má za úkol uvolnit alokované zdroje při vytváření paketu.
 
 
 
