@@ -90,5 +90,6 @@ Chybové stavy jsou identifikovány a řešeny pomocí příslušných chybovýc
 K ověření byly využity dva počítače, jeden s operačním systémem Ubuntu 20.04.2.0 LTS a druhý referenční stroj PDS-VM. Testování probíhalo prostřednictvím zachytávání paketů a srovnávání výstupů, přičemž byl použit program Wireshark1 k ověření všech podporovaných typů paketů. Pro generování paketů byly použity nástroje ping, nping2 a hashcat.
 
 
+<img title="a title" alt="Alt text" src="/images/boo.svg">
 
 
