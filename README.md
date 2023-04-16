@@ -70,5 +70,13 @@ Funkce **get_packet_time()** má za úkol upravit formát časového razítka p�
 ### Destruktor
 Tato funkce má za úkol uvolnit alokované zdroje při vytváření paketu.
 
+# Překlad a spuštění 
+
+V adresáři se nachází makefile, pomocí příkazu make se vytvoří spustitelný soubor v kořenovém adresáři. Příkaz make clean vymaže dočasné soubory a vytvořené spustitelné soubory.
+ 
+#### Přiklad spuštění
+`$ ./ipk-sniffer -i eth0 --tcp` 
+
+
 
 
